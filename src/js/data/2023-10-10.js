@@ -1006,11 +1006,11 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Klaus",
-    img: "XC-Klaus.PNG",
+    img: "XC-Klaus.png",
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["XC"]
-      spoiler: true
+      spoiler: true,
     }
   },
   {
@@ -1605,7 +1605,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
-      spoiler: true
+      spoiler: true,
     }
   },
   {
