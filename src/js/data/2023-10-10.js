@@ -1723,7 +1723,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Matthew",
-    img: "XC3-Shania.png",
+    img: "FR-Matthew.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
@@ -1731,7 +1731,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "A",
-    img: "FR-A.png",
+    img: "XC3-Shania.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
