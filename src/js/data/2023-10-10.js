@@ -1796,7 +1796,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Panacea",
-    img: "XC3-Shania.png",
+    img: "FR-Panacea.png",
     opts: {
       role: ["nonplayable"],
       series: ["FR"]
