@@ -1721,5 +1721,87 @@ dataSet[dataSetVersion].characterData = [
       series: ["XC3"]
     }
   },
+  {
+    name: "Matthew",
+    img: "FR-Matthew.png",
+    opts: {
+      role: ["playable"],
+      series: ["FR"]
+    }
+  },
+  {
+    name: "A",
+    img: "FR-A.png",
+    opts: {
+      role: ["playable"],
+      series: ["FR"]
+    }
+  },
+  {
+    name: "Nikol",
+    img: "XC3-Nikol.png",
+    opts: {
+      role: ["playable"],
+      series: ["FR"]
+    }
+  },
+  {
+    name: "Glimmer",
+    img: "XC3-Glimmer.png",
+    opts: {
+      role: ["playable"],
+      series: ["FR"]
+    }
+  },
+  {
+    name: "Shulk (FR)",
+    img: "FR-Shulk.png",
+    opts: {
+      role: ["playable"],
+      series: ["XC3"]
+    }
+  },
+  {
+    name: "Rex (FR)",
+    img: "FR-Rex.png",
+    opts: {
+      role: ["playable"],
+      series: ["FR"]
+    }
+  },
+  {
+    name: "Alpha",
+    img: "FR-Alpha.png",
+    opts: {
+      role: ["nonplayable", "antagonist"],
+      series: ["FR"],
+      spoiler: true
+    }
+  },
+  {
+    name: "Linka",
+    img: "FR-Linka.png",
+    opts: {
+      role: ["nonplayable"],
+      series: ["FR"]
+    }
+  },
+  {
+    name: "Na'el",
+    img: "FR-Na'el.png",
+    opts: {
+      role: ["nonplayable"],
+      series: ["FR"]
+    }
+  },
+  {
+    name: "Panacea",
+    img: "FR-Panacea.png",
+    opts: {
+      role: ["nonplayable"],
+      series: ["FR"]
+    }
+  },
+
 ];
 
