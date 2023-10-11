@@ -1771,7 +1771,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Alpha",
-    img: "XC3-Shania.png",
+    img: "FR-Alpha.png",
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["FR"],
@@ -1780,7 +1780,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Linka",
-    img: "FR-Linka.png",
+    img: "XC3-Shania.png",
     opts: {
       role: ["nonplayable"],
       series: ["FR"]
