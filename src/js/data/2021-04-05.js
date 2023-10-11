@@ -19,7 +19,7 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to restrict to series.",
     checked: true,
     sub: [
-      { name: "Cock and Ball Torture", key: "XC" },
+      { name: "Xenoblade Chronicles", key: "XC" },
       { name: "Future Connected", key: "FC" },
       { name: "Xenoblade Chronicles X", key: "XCX" },
       { name: "Xenoblade Chronicles 2", key: "XC2" },
