@@ -1,4 +1,4 @@
-dataSetVersion = "2023-10-10"; // Change this when creating a new data set version. YYYY-MM-DD format.
+dataSetVersion = "2023-10-23"; // Change this when creating a new data set version. YYYY-MM-DD format.
 dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [
@@ -33,7 +33,7 @@ dataSet[dataSetVersion].options = [
   {
     name: "Filter Spoilers",
     key: "spoiler",
-    tooltip: "Check this to restrict spoilers.",
+    tooltip: "Check this to restrict spoilers."
   },
   {
     name: "Filter Duplicates",
@@ -370,8 +370,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["playable"],
       series: ["XC2"],
-      spoiler: true,
-    },
+      spoiler: true
+    }
   },
   {
     name: "Dromarch",
@@ -1009,8 +1009,8 @@ dataSet[dataSetVersion].characterData = [
     img: "XC-Klaus.PNG",
     opts: {
       role: ["nonplayable", "antagonist"],
-      series: ["XC"]
-      spoiler: true
+      series: ["XC"],
+      spoiler: True
     }
   },
   {
@@ -1605,7 +1605,6 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
-      spoiler: true
     }
   },
   {
@@ -1643,7 +1642,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Queen Melia",
-    img: "XC3-Melia.png",
+    img: "XC3_Melia.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"],
@@ -1741,7 +1740,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nikol",
-    img: "FR-Nikol.png",
+    img: "XC3-Nikol.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
@@ -1749,7 +1748,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Glimmer",
-    img: "FR-Glimmer.png",
+    img: "XC3-Glimmer.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
