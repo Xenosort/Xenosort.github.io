@@ -849,8 +849,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["playable"],
       series: ["XC"],
-      spoiler: true,
-    },
+      spoiler: true
+    }
   },
   {
     name: "Reyn",
@@ -1018,8 +1018,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["XC"],
-      spoiler: true,
-    },
+      spoiler: true
+    }
   },
   {
     name: "Kino",
@@ -1636,8 +1636,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable"],
       series: ["XC3"],
-      spoiler: true,
-    },
+      spoiler: true
+    }
   },
   {
     name: "Queen Melia",
@@ -1645,8 +1645,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable"],
       series: ["XC3"],
-      spoiler: true,
-    },
+      spoiler: true
+    }
   },
   {
     name: "Masha",
@@ -1686,8 +1686,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["XC3"],
-      spoiler: true,
-    },
+      spoiler: true
+    }
   },
   {
     name: "Moebius N",
@@ -1775,8 +1775,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["FR"],
-      spoiler: true,
-    },
+      spoiler: true
+    }
   },
   {
     name: "Linka",
