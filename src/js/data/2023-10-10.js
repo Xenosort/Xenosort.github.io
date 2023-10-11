@@ -1739,7 +1739,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nikol",
-    img: "XC3-Nikol.png",
+    img: "FR-Nikol.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
@@ -1747,7 +1747,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Glimmer",
-    img: "XC3-Glimmer.png",
+    img: "FR-Glimmer.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
