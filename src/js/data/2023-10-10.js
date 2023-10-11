@@ -1723,7 +1723,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Matthew",
-    img: "FR-Matthew.png",
+    img: "XC3-Shania.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
