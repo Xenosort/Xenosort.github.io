@@ -1747,7 +1747,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Glimmer",
-    img: "XC3-Shania.png",
+    img: "FR-Glimmer.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
@@ -1755,7 +1755,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "FR-Shulk",
-    img: "FR-Shulk.png",
+    img: "XC3-Shania.png",
     opts: {
       role: ["playable"],
       series: ["XC3"]
