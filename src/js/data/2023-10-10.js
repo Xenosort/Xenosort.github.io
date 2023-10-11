@@ -33,7 +33,7 @@ dataSet[dataSetVersion].options = [
   {
     name: "Filter Spoilers",
     key: "spoiler",
-    tooltip: "Check this to restrict spoilers."
+    tooltip: "Check this to restrict spoilers.",
   },
   {
     name: "Filter Duplicates",
