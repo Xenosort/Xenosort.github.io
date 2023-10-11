@@ -1641,7 +1641,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Queen Melia",
-    img: "XC3_Melia.png",
+    img: "XC3-Melia.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"],
