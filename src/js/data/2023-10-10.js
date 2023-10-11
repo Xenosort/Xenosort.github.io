@@ -1605,6 +1605,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
+      spoiler: true
     }
   },
   {
