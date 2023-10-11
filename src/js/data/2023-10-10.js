@@ -1604,8 +1604,8 @@ dataSet[dataSetVersion].characterData = [
     img: "XC3-Ghondor.png",
     opts: {
       role: ["nonplayable"],
-      series: ["XC3"]
-      spoiler: true,
+      series: ["XC3"],
+      spoiler: true
     }
   },
   {
