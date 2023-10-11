@@ -1754,16 +1754,16 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "FR-Shulk",
-    img: "XC3-Shania.png",
+    name: "Shulk (FR)",
+    img: "FR-Shulk.png",
     opts: {
       role: ["playable"],
       series: ["XC3"]
     }
   },
   {
-    name: "FR-Rex",
-    img: "FR-Rex.png",
+    name: "Rex (FR)",
+    img: "XC3-Shania.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
