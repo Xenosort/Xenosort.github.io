@@ -370,8 +370,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["playable"],
       series: ["XC2"],
-      spoiler: true,
-    },
+      spoiler: true
+    }
   },
   {
     name: "Dromarch",
@@ -1009,8 +1009,8 @@ dataSet[dataSetVersion].characterData = [
     img: "XC-Klaus.png",
     opts: {
       role: ["nonplayable", "antagonist"],
-      series: ["XC"]
-      spoiler: true,
+      series: ["XC"],
+      spoiler: true
     }
   },
   {
