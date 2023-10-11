@@ -1440,7 +1440,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Lanz",
-    img: "Lanz_portrait.png",
+    img: "XC3-Lanz.png",
     opts: {
       role: ["playable"],
       series: ["XC3"]
@@ -1448,7 +1448,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Noah",
-    img: "Noah_portrait.png",
+    img: "XC3-Noah.png",
     opts: {
       role: ["playable"],
       series: ["XC3"]
@@ -1456,7 +1456,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Sena",
-    img: "Sena_portrait.png",
+    img: "XC3-Sena.png",
     opts: {
       role: ["playable"],
       series: ["XC3"]
@@ -1464,7 +1464,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Taion",
-    img: "Taion_portrait.png",
+    img: "XC3-Taion.png",
     opts: {
       role: ["playable"],
       series: ["XC3"]
@@ -1472,7 +1472,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Mio",
-    img: "Mio_portrait.png",
+    img: "XC3-Mio.png",
     opts: {
       role: ["playable"],
       series: ["XC3"]
@@ -1480,7 +1480,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ashera",
-    img: "XC3_Ashera_Portrait_Art.png",
+    img: "XC3-Ashera.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1488,7 +1488,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Valdi",
-    img: "XC3_Valdi_Portrait_Art.png",
+    img: "XC3-Valdi.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1496,7 +1496,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Fiona",
-    img: "XC3_Fiona_Portrait_Art.png",
+    img: "XC3-Fiona.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1504,7 +1504,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Gray ",
-    img: "XC3_Gray_Portrait_Art.png",
+    img: "XC3-Gray.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1512,7 +1512,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Alexandria",
-    img: "XC3_Alexandria_Portrait_Art.png",
+    img: "XC3-Alexandria.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1520,7 +1520,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Juniper",
-    img: "Juniper_Twitter_Art.png",
+    img: "XC3-Juniper.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1528,7 +1528,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Zeon",
-    img: "XC3_Zeon_portrait_art.png",
+    img: "XC3-Zeon.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1536,7 +1536,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Riku ",
-    img: "XC3_Riku_portrait_Artwork.png",
+    img: "XC3-Riku.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1544,7 +1544,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Manana",
-    img: "XC3_Riku_portrait_Artwork.png",
+    img: "XC3-Manana.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1552,7 +1552,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Cammuravi",
-    img: "XC3_Riku_portrait_Artwork.png",
+    img: "XC3-Cammuravi.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1560,7 +1560,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Isurd",
-    img: "XC3_Riku_portrait_Artwork.png",
+    img: "XC3-Isurd.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1568,7 +1568,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ethel",
-    img: "Ethel_portrait_artwork.png",
+    img: "XC3-Ethel.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1576,7 +1576,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Teach",
-    img: "Teach_portrait_artwork.png",
+    img: "XC3-Teach.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1584,7 +1584,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Monica",
-    img: "Monica_Vandham_portrait_artwork.png",
+    img: "XC3-Monica.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1592,7 +1592,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Triton",
-    img: "XC3_Triton_portrait.png",
+    img: "XC3-Triton.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1600,7 +1600,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ghondor",
-    img: "XC3_Ghondor_Portrait_Art.png",
+    img: "XC3-Ghondor.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1608,7 +1608,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Miyabi",
-    img: "XC3_Miyabi_portrait.png",
+    img: "XC3-Miyabi.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1616,7 +1616,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Segiri",
-    img: "Segiri_portrait_artwork.png",
+    img: "XC3-Segiri.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1624,7 +1624,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ino",
-    img: "Ino_infobox_pic.png",
+    img: "XC3-Ino.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1632,7 +1632,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Queen Nia",
-    img: "Hero_Nia.png",
+    img: "XC3-Nia.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"],
@@ -1641,7 +1641,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Queen Melia",
-    img: "Hero_Melia.png",
+    img: "XC3_Melia.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"],
@@ -1650,7 +1650,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Masha",
-    img: "Masha_portrait_artwork.png",
+    img: "XC3-Masha.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1658,7 +1658,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Guernica Vandham",
-    img: "XC3_Guernica_Vandham_Portrait_art.png",
+    img: "XC3-Guernica.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1666,7 +1666,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Shania",
-    img: "Shania_Concept_Art_cropped.png",
+    img: "XC3-Shania.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1674,7 +1674,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Z",
-    img: "Z_Portrait.png",
+    img: "XC3-Z.png",
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["XC3"]
@@ -1682,7 +1682,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Moebius M",
-    img: "XC3_M.png",
+    img: "XC3-M.png",
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["XC3"],
@@ -1691,7 +1691,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Moebius N",
-    img: "XC3_N_Portrait_Art.png",
+    img: "XC3-N.png",
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["XC3"]
@@ -1699,7 +1699,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Joran",
-    img: "Joran_Concept_Art_cropped.png",
+    img: "XC3-Joran.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1707,7 +1707,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nimue",
-    img: "Nimue_Concept_cropped.png",
+    img: "XC3-Nimue.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
@@ -1715,7 +1715,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Boleris",
-    img: "Bolearis_Cropped.png",
+    img: "XC3-Bolearis.png",
     opts: {
       role: ["nonplayable"],
       series: ["XC3"]
