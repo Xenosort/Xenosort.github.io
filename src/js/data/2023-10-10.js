@@ -1763,7 +1763,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Rex (FR)",
-    img: "XC3-Shania.png",
+    img: "FR-Rex.png",
     opts: {
       role: ["playable"],
       series: ["FR"]
@@ -1771,7 +1771,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Alpha",
-    img: "FR-Alpha.png",
+    img: "XC3-Shania.png",
     opts: {
       role: ["nonplayable", "antagonist"],
       series: ["FR"],
