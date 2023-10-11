@@ -1754,7 +1754,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Shulk (FR)",
+    name: "FR-Shulk",
     img: "FR-Shulk.png",
     opts: {
       role: ["playable"],
@@ -1762,7 +1762,7 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "Rex (FR)",
+    name: "FR-Rex",
     img: "FR-Rex.png",
     opts: {
       role: ["playable"],
