@@ -1788,7 +1788,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Na'el",
-    img: "XC3-Shania.png",
+    img: "FR-Na'el.png",
     opts: {
       role: ["nonplayable"],
       series: ["FR"]
@@ -1796,7 +1796,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Panacea",
-    img: "FR-Panacea.png",
+    img: "XC3-Shania.png",
     opts: {
       role: ["nonplayable"],
       series: ["FR"]
