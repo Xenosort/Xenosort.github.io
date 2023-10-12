@@ -766,18 +766,22 @@ function preloadImages() {
   const totalLength = characterDataToSort.length;
   let imagesLoaded = 0;
 
-  const loadImage = async (src) => {
-    const blob = await fetch(src).then(res => res.blob());
-    return new Promise((res, rej) => {
-      const reader = new FileReader();
-      reader.onload = ev => {
-        progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded * 100 / totalLength));
-        res(ev.target.result);
-      };
-      reader.onerror = rej;
-      reader.readAsDataURL(blob);
-    });
-   };
+  const loadImage = (src, idx) => {
+      return new Promise((resolve, reject) => {
+          const img = new Image();
+
+          img.crossOrigin = 'Anonymous';
+          img.onload = () => {
+            setImageToData(img, idx);
+            resolve(img);
+          };
+          img.onerror = img.onabort = () => reject(src);
+          if ( img.complete || img.complete === undefined ) {
+            img.src = src;
+          }
+          img.src = src;
+      });
+  };
 
   const setImageToData = (img, idx) => {
     const canvas = document.createElement('canvas');
@@ -788,10 +792,9 @@ function preloadImages() {
     progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded * 100 / totalLength));
   };
 
-  return Promise.all(characterDataToSort.map(async (char, idx) => {
-    characterDataToSort[idx].img = await loadImage(imageRoot + char.img);
-  }));
-
+  const promises = characterDataToSort.map((char, idx) => loadImage(imageRoot + char.img, idx));
+  return Promise.all(promises);
+}
 
 /**
  * Returns a readable time string from milliseconds.
