@@ -1813,7 +1813,7 @@ dataSet[dataSetVersion].characterData = [
     img: "XC3-X.png",
     opts: {
       role: ["playable", "antagonist"],
-      series: ["FR"]
+      series: ["XC3"]
     }
   },
 
