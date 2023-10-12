@@ -50,18 +50,31 @@ let pointerPrev         = 0;
 let finalCharacters = [];
 let loading         = false;
 let totalBattles    = 0;
+let completedBattles  = 0;
 let sorterURL       = window.location.host + window.location.pathname;
 let storedSaveType  = localStorage.getItem(`${sorterURL}_saveType`);
 
+function setTheme(selectObj) {
+  const value = selectObj.value;
+  document.getElementsByTagName("html")[0].setAttribute("class", value);
+  localStorage.setItem("theme", value);
+}
+
 /** Initialize script. */
 function init() {
+
+  const theme = localStorage.getItem("theme");
+  if (theme) {
+    document.querySelector("html").setAttribute("class", theme);
+    document.querySelector("#theme").value = theme;
+  }
 
   /** Define button behavior. */
   document.querySelector('.starting.start.button').addEventListener('click', start);
   document.querySelector('.starting.load.button').addEventListener('click', loadProgress);
 
-  document.querySelector('.left.sort.image').addEventListener('click', () => pick('left'));
-  document.querySelector('.right.sort.image').addEventListener('click', () => pick('right'));
+  document.querySelector('.left .sort.image').addEventListener('click', () => pick('left'));
+  document.querySelector('.right .sort.image').addEventListener('click', () => pick('right'));
   
   document.querySelector('.sorting.tie.button').addEventListener('click', () => pick('tie'));
   document.querySelector('.sorting.undo.button').addEventListener('click', undo);
@@ -110,7 +123,7 @@ function init() {
     const select = document.createElement('option');
     select.value = i;
     select.text = i;
-    if (i === 3) { select.selected = 'selected'; }
+    if (i === 5) { select.selected = 'selected'; }
     document.querySelector('.image.selector > select').insertAdjacentElement('beforeend', select);
   }
 
@@ -276,6 +289,7 @@ function start() {
 /** Displays the current state of the sorter. */
 function display() {
   const percent         = Math.floor(sortedNo * 100 / totalBattles);
+  //const percent         = Math.floor(completedBattles / totalBattles * 100);
   const leftCharIndex   = sortedIndexList[leftIndex][leftInnerIndex];
   const rightCharIndex  = sortedIndexList[rightIndex][rightInnerIndex];
   const leftChar        = characterDataToSort[leftCharIndex];
@@ -287,10 +301,10 @@ function display() {
     return `<p title="${charTooltip}">${charName}</p>`;
   };
 
-  progressBar(`Battle No. ${battleNo}`, percent);
+  progressBar(`Battle No. ${battleNo} (Possibly ${totalBattles - completedBattles} remaining)`, percent);
 
-  document.querySelector('.left.sort.image').src = leftChar.img;
-  document.querySelector('.right.sort.image').src = rightChar.img;
+  document.querySelector('.left .sort.image').src = leftChar.img;
+  document.querySelector('.right .sort.image').src = rightChar.img;
 
   
 
@@ -329,6 +343,8 @@ function pick(sortType) {
   battleNoPrev        = battleNo;
   sortedNoPrev        = sortedNo;
   pointerPrev         = pointer;
+  
+  completedBattles += 1;
 
   /** 
    * For picking 'left' or 'right':
@@ -468,7 +484,7 @@ function progressBar(indicator, percentage) {
  * 
  * @param {number} [imageNum=3] Number of images to display. Defaults to 3.
  */
-function result(imageNum = 3) {
+function result(imageNum = 5) {
   document.querySelectorAll('.finished.button').forEach(el => el.style.display = 'block');
   document.querySelector('.image.selector').style.display = 'block';
   document.querySelector('.time.taken').style.display = 'block';
@@ -488,7 +504,7 @@ function result(imageNum = 3) {
   const res = (char, num) => {
     const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
-    return `<div class="result"><div class="left">${num}</div><div class="right"><span title="${charTooltip}">${charName}</span></div></div>`;
+    return `<div class="result"><div class="left l2">${num}</div><div class="right"><span title="${charTooltip}">${charName}</span></div></div>`;
   }
 
   let rankNum       = 1;
@@ -526,6 +542,8 @@ function result(imageNum = 3) {
 /** Undo previous choice. */
 function undo() {
   if (timeTaken) { return; }
+
+  completedBattles -= 1;
 
   choices = battleNo === battleNoPrev ? choices : choices.slice(0, -1);
 
@@ -637,21 +655,25 @@ function setLatestDataset() {
     .reduce((latestDateIndex, currentDate, currentIndex, array) => {
       return currentDate > array[latestDateIndex] ? currentIndex : latestDateIndex;
     }, 0);
+
   currentVersion = Object.keys(dataSet)[latestDateIndex];
 
-  characterData = dataSet[currentVersion].characterData;
-  options = dataSet[currentVersion].options;
-
-  populateOptions();
+  if (dataSet[currentVersion].characterData !== undefined) {
+    characterData = dataSet[currentVersion].characterData;
+    options = dataSet[currentVersion].options;
+  
+  
+    populateOptions();
+  }
 }
 
 /** Populate option list. */
 function populateOptions() {
   const optList = document.querySelector('.options');
-  const optInsert = (name, id, tooltip, checked = true, disabled = false) => {
-    return `<div><label title="${tooltip?tooltip:name}"><input id="cb-${id}" type="checkbox" ${checked?'checked':''} ${disabled?'disabled':''}> ${name}</label></div>`;
+  const optInsert = (name, id, tooltip, checked = false, disabled = false) => {
+    return `<div><label class="option-label" title="${tooltip?tooltip:name}"><input id="cb-${id}" type="checkbox" ${checked?'checked':''} ${disabled?'disabled':''}> ${name}</label></div>`;
   };
-  const optInsertLarge = (name, id, tooltip, checked = true) => {
+  const optInsertLarge = (name, id, tooltip, checked = false) => {
     return `<div class="large option"><label title="${tooltip?tooltip:name}"><input id="cbgroup-${id}" type="checkbox" ${checked?'checked':''}> ${name}</label></div>`;
   };
 
@@ -766,34 +788,22 @@ function preloadImages() {
   const totalLength = characterDataToSort.length;
   let imagesLoaded = 0;
 
-  const loadImage = (src, idx) => {
-      return new Promise((resolve, reject) => {
-          const img = new Image();
-
-          img.crossOrigin = 'Anonymous';
-          img.onload = () => {
-            setImageToData(img, idx);
-            resolve(img);
-          };
-          img.onerror = img.onabort = () => reject(src);
-          if ( img.complete || img.complete === undefined ) {
-            img.src = src;
-          }
-          img.src = src;
-      });
+  const loadImage = async (src) => {
+    const blob = await fetch(src).then(res => res.blob());
+    return new Promise((res, rej) => {
+      const reader = new FileReader();
+      reader.onload = ev => {
+        progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded * 100 / totalLength));
+        res(ev.target.result);
+      };
+      reader.onerror = rej;
+      reader.readAsDataURL(blob);
+    });
   };
 
-  const setImageToData = (img, idx) => {
-    const canvas = document.createElement('canvas');
-    canvas.width = img.naturalWidth;
-    canvas.height = img.naturalHeight;
-    canvas.getContext('2d').drawImage(img, 0, 0);
-    characterDataToSort[idx].img = canvas.toDataURL();
-    progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded * 100 / totalLength));
-  };
-
-  const promises = characterDataToSort.map((char, idx) => loadImage(imageRoot + char.img, idx));
-  return Promise.all(promises);
+  return Promise.all(characterDataToSort.map(async (char, idx) => {
+    characterDataToSort[idx].img = await loadImage(imageRoot + char.img);
+  }));
 }
 
 /**
