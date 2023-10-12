@@ -1808,5 +1808,13 @@ dataSet[dataSetVersion].characterData = [
       series: ["FR"]
     }
   },
+    {
+    name: "Moebius X",
+    img: "XC3-X.png",
+    opts: {
+      role: ["playable", "antagonist"],
+      series: ["FR"]
+    }
+  },
 
 ];
