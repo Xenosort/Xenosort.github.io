@@ -1637,7 +1637,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable"],
       series: ["XC3"],
-      spoiler: true
+      spoiler: true,
+      duplicate: true
     }
   },
   {
@@ -1646,7 +1647,8 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       role: ["nonplayable"],
       series: ["XC3"],
-      spoiler: true
+      spoiler: true,
+      duplicate: true
     }
   },
   {
@@ -1759,7 +1761,8 @@ dataSet[dataSetVersion].characterData = [
     img: "FR-Shulk.png",
     opts: {
       role: ["playable"],
-      series: ["XC3"]
+      series: ["XC3"],
+      duplicate: true
     }
   },
   {
@@ -1767,7 +1770,8 @@ dataSet[dataSetVersion].characterData = [
     img: "FR-Rex.png",
     opts: {
       role: ["playable"],
-      series: ["FR"]
+      series: ["FR"],
+      duplicate: true
     }
   },
   {
